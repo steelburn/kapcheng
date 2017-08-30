@@ -1,0 +1,138 @@
+defaultpage 303:http://nms.blogspaper.org/?msg=%s
+ttl -1
+#logfile /root/bin/redir.log
+logfile /tmp/redir.log
+
+#Authentication requirements (Captive portal):
+authpage http://127.0.0.1/auth.php
+authcheck http://127.0.0.1/authcheck.php
+authsuccess Authenticated
+authfail Not authenticated
+authlogout http://nms.blogspaper.org/logout.php
+
+#authrequired commands:
+authrequired config select
+#expected parameter: yes | no | select
+#authrequired ip 172.16.1.6
+#authrequired ip 192.168.1.107
+#expected parameter: <ip_address>
+#authrequired iprange 172.16.1.1-172.16.1.255
+#authrequired iprange 192.168.1.100-192.168.1.110
+#authrequired iprange 192.168.1.120-192.168.1.240
+authrequired iprange 0.0.0.1-255.255.255.254
+
+block she-male Blocked material
+block shemale Blocked material
+block ladyboy Pornographic material
+block playboy Pornographic material
+block sex Porn
+block pr0n Porn
+block tube8 Blocked material
+block ccgals.com Blocked site
+block freeporn Blocked material
+block adultfriendfinder Blocked material
+block /gals/ Blocked material
+block asianporn Blocked material
+block voyeur Blocked material
+block asianislanders Blocked material
+block www.javhq.net Blocked Material
+block fetish Blocked Material
+block freexxx Blocked Material
+block www.3gpmelayuboleh.com
+block bluefame
+block awwwskeetskeet.com Pr0nography
+block nichebros2.com Pr0nography
+block wcpclub.com Pr0nography
+block latinabuffet.com Pr0nography
+block plumprumps.com Pr0nography
+block doctorassmaster.com Pr0nography
+block Porn Pr0nography
+block Fucked Pr0nography
+block porn Pr0nography
+block fucked Pr0nography
+block freecuckolds.com Pr0nography
+block candymonroe Pr0nography
+block candy+monroe Pr0nography
+block freeones Pr0nography
+
+
+
+
+#Advert blocking
+#block /ads.
+#block /ad.
+block .3gp
+block /adserving.
+block .doubleclick.net/
+block /pagead/
+block /adserv.
+
+#Proxy blocking
+block myass
+#block proxy Abusive material
+block anonymizer
+block anonym
+block anonr.com
+block proxypimp.com
+block 250.eu
+block browse.ms
+block ublock.biz
+block invisiblesurfing.com
+block kroxy.net
+block proxymafia.net
+block armyproxy.com
+block cantbustme.com
+block proxrio.com
+block texasproxy.com
+block proxystart.com
+block ourproxy.com
+block surfaz.com
+block hidemy.info
+block secureproxy.us
+block proxybuddy.com
+block sitesurf.net
+block boratproxy.com
+block limitkiller.com
+block unblocked.org
+block nuip.net
+block webproxy.pro
+block url.sc
+block anon.me
+block olympicproxy.com
+block privax.us
+block ninjacloak
+#Misc blocking
+block servserv.generals.ea.com
+
+
+#blockip 192.168.1.135 Abusive user
+#blockip 192.168.1.134 Temporarily disabled
+#blockip 192.168.1.136 Temporarily disabled
+#blockip 192.168.1.138 Constant violation. Abusive user.
+#blockip 192.168.1.145 Temporarily disabled.
+
+redirect updates.microsoft.com http://www.google.com
+#redirect www.myspace.com http://www.facebook.com
+redirect www.lucah.com http://www.islam.gov.my
+
+replacedomain us.archive.ubuntu.com my.archive.ubuntu.com
+replacedomain www.google.com www.google.com.my
+replacedomain au.download.windowsupdate.com www.google.com.my
+
+#replace yahoo google
+#replace archive.ubuntu.com 192.168.1.3
+#replace my.archive.ubuntu.com 192.168.1.3
+security.ubuntu.com 192.168.1.3
+archive.ubuntu.com 192.168.1.3
+
+excludeip 192.168.1.136
+excludeip 192.168.1.6
+excludeip 192.168.1.3
+excludeip 192.168.1.8
+excludeip 192.168.1.9
+#excludeip 192.168.1.101
+#excludeip 192.168.1.107
+
+#exclude ar1.updates.microsoft.com
+
+#End of rule file

@@ -1,0 +1,27 @@
+
+User management
+	- Add/Modify/Delete
+	- Set ACL
+Group management
+	- Add/Modify/Delete
+	- Set ACL
+IP management
+	- Add/Modify/Delete
+	- Set ACL
+
+Features
+	- Activate/Deactivate
+
+Filter management*
+
+Captive portal management*
+
+Exclusions*
+
+Logging/Reporting
+	- Logging configuration
+		- Set log verbosity
+		- Set log target
+	- View logs
+Logout
+
